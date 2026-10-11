@@ -1,0 +1,19 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+
+# Large data — regenerate from Apache.log
+data/raw/
+data/processed/
+
+# Model binaries — regenerate via src/train_isolation_forest.py
+models/*.pkl
+models/*.json
+
+# Editor
+.vscode/
+.idea/
