@@ -80,6 +80,32 @@ text
 
 \- Anomalies cluster in \*\*bursts\*\* — 564 flagged lines concentrated in 103 minutes
 
+### Visual summary
+
+**Score distribution** — most lines cluster around the decision boundary; anomalies sit in the positive-score tail.
+
+![Score distribution](reports/figures/01_score_distribution.png)
+
+**Top templates** — the model correctly ignores high-frequency benign templates and up-weights rare ones.
+
+![Top templates](reports/figures/02_top_templates.png)
+
+**Anomaly rate by hour** — anomalies spike during operational windows, not uniformly.
+
+![Anomaly rate by hour](reports/figures/03_anomaly_by_hour.png)
+
+**Timeline** — anomalies arrive in bursts, not at a constant rate.
+
+![Anomaly timeline](reports/figures/04_anomaly_timeline.png)
+
+**Severity ≠ anomaly** — warning-level lines are flagged at 100%; routine errors at 0.07%.
+
+![Level vs anomaly](reports/figures/05_level_vs_anomaly.png)
+
+**Top anomalous minutes** — the operational signal an SRE would act on.
+
+![Top minutes](reports/figures/06_top_minutes.png)
+
 
 
 \## Example API call
